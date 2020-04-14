@@ -91,11 +91,10 @@ public class AuthorizeReq {
         this.display = display;
     }
 
-    public AuthorizeReq(String client_id, String redirect_uri, String state, String scope) {
+    public AuthorizeReq(String client_id, String redirect_uri, String state) {
         this.client_id = client_id;
         this.redirect_uri = redirect_uri;
         this.state = state;
-        this.scope = scope;
     }
 
     public AuthorizeReq() {
