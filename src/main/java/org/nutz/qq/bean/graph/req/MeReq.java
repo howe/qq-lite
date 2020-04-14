@@ -8,7 +8,7 @@ package org.nutz.qq.bean.graph.req;
 public class MeReq {
 
     /**
-     * 在Step1中获取到的access token。
+     * 用户凭证
      */
     private String access_token;
 
@@ -21,9 +21,9 @@ public class MeReq {
     }
 
     /**
-     * UnionId
+     * 是否申请unionID
      */
-    private int unionid;
+    private int unionid = 1;
 
     public int getUnionid() {
         return unionid;

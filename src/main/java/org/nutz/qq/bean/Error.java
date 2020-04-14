@@ -121,11 +121,7 @@ public class Error {
             new Error(110507, "校验APP info 签名信息失败"),
             new Error(110508, "获取code失败"),
             new Error(110509, "SKEY校验失败"),
-            new Error(110510, "Disable"),
-            new Error(100001, "网站url格式不正确（网站url长度不能超过256，网站url只能有二级目录）"),
-            new Error(100003, "服务器连接超时。"),
-            new Error(103001, "网站的mete信息和QQ提供的验证信息不一致。"),
-            new Error(103002, "网站不能使用IP地址和端口号。")
+            new Error(110510, "Disable")
     ));
 
     public static Error getError(int code) {
