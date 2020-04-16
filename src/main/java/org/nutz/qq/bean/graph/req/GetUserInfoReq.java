@@ -47,4 +47,13 @@ public class GetUserInfoReq {
     public void setOpenid(String openid) {
         this.openid = openid;
     }
+
+    public GetUserInfoReq(String access_token, String oauth_consumer_key, String openid) {
+        this.access_token = access_token;
+        this.oauth_consumer_key = oauth_consumer_key;
+        this.openid = openid;
+    }
+
+    public GetUserInfoReq() {
+    }
 }

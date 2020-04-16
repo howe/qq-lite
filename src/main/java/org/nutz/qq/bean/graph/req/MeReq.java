@@ -32,4 +32,12 @@ public class MeReq {
     public void setUnionid(int unionid) {
         this.unionid = unionid;
     }
+
+    public MeReq(String access_token, int unionid) {
+        this.access_token = access_token;
+        this.unionid = unionid;
+    }
+
+    public MeReq() {
+    }
 }
