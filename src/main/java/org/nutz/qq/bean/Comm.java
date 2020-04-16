@@ -8,7 +8,7 @@ package org.nutz.qq.bean;
 public class Comm {
 
 
-    public static String GRAPH_GATE = "https://graph.weixin.qq.com";
+    public static String GRAPH_GATE = "https://graph.qq.com";
 
     public static String GRAPH_OAUTH2_AUTHORIZE = "/oauth2.0/authorize";
 
