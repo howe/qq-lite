@@ -7,7 +7,9 @@ package org.nutz.qq.bean;
  */
 public class Comm {
 
-
+    /**
+     * QQ授权域名
+     */
     public static String GRAPH_GATE = "https://graph.qq.com";
 
     public static String GRAPH_OAUTH2_AUTHORIZE = "/oauth2.0/authorize";
