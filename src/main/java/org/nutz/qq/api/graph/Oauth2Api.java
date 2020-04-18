@@ -130,7 +130,7 @@ public class Oauth2Api {
             } else {
                 String json = HttpUtil.get(Comm.GRAPH_GATE + Comm.GRAPH_USER_GET_USER_INFO + "?access_token=" + req.getAccess_token()
                         + "&oauth_consumer_key=" + req.getOauth_consumer_key()
-                        + "&unionid=" + req.getOpenid());
+                        + "&openid=" + req.getOpenid());
                 if (json.indexOf("nickname") >= 0) {
                     GetUserInfoResp resp = Json.fromJson(GetUserInfoResp.class, json);
                     return resp;
