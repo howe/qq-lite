@@ -16,8 +16,6 @@ import org.nutz.qq.bean.graph.resp.TokenResp;
 import org.nutz.qq.util.HttpUtil;
 import org.nutz.qq.util.Util;
 
-import static org.nutz.qq.bean.Comm.GRAPH_GATE;
-
 /**
  * Copyright 2018 Freshplay Co ltd
  *
@@ -79,7 +77,7 @@ public class Oauth2Api {
                     return resp;
                 } else {
                     NutMap resp = Json.fromJson(NutMap.class, Util.jsonp2Json(str));
-                    throw new Exception(Error.getError(resp.getInt("errcode")).toString());
+                    throw new Exception(Error.getError(resp.getInt("error")).toString());
                 }
             }
         } catch (Exception e) {
