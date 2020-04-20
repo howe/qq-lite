@@ -38,7 +38,7 @@ public class Oauth2Api {
             } else if (Strings.isBlank(req.getState())) {
                 throw new NullPointerException("state为空");
             } else {
-                return Comm.GRAPH_GATE + Comm.GRAPH_OAUTH2_AUTHORIZE + "?response_type=" + req.getResponse_type()
+                return Comm.GRAPH_GATE + Comm.GRAPH_OAUTH2_AUTHORIZE_ACTION + "?response_type=" + req.getResponse_type()
                         + "&client_id=" + req.getClient_id()
                         + "&redirect_uri=" + req.getRedirect_uri()
                         + "&state=" + req.getState()
@@ -69,7 +69,7 @@ public class Oauth2Api {
             } else if (Strings.isBlank(req.getRedirect_uri())) {
                 throw new NullPointerException("redirect_uri为空");
             } else {
-                String str = HttpUtil.get(Comm.GRAPH_GATE + Comm.GRAPH_OAUTH2_TOKEN + "?grant_type=" + req.getGrant_type()
+                String str = HttpUtil.get(Comm.GRAPH_GATE + Comm.GRAPH_OAUTH2_TOKEN_ACTION + "?grant_type=" + req.getGrant_type()
                         + "&client_id=" + req.getClient_id() + "&code=" + req.getCode()
                         + "&client_secret=" + req.getClient_secret() + "&redirect_uri=" + req.getRedirect_uri());
                 if (str.indexOf("access_token") >= 0) {
@@ -100,7 +100,7 @@ public class Oauth2Api {
             if (Strings.isBlank(req.getAccess_token())) {
                 throw new NullPointerException("access_token为空");
             } else {
-                String str = HttpUtil.get(Comm.GRAPH_GATE + Comm.GRAPH_OAUTH2_ME + "?access_token=" + req.getAccess_token()
+                String str = HttpUtil.get(Comm.GRAPH_GATE + Comm.GRAPH_OAUTH2_ME_ACTION + "?access_token=" + req.getAccess_token()
                         + "&unionid=" + req.getUnionid());
                 if (str.indexOf("openid") >= 0) {
                     MeResp resp = Json.fromJson(MeResp.class, Util.jsonp2Json(str));
@@ -128,7 +128,7 @@ public class Oauth2Api {
             if (Strings.isBlank(req.getAccess_token())) {
                 throw new NullPointerException("access_token为空");
             } else {
-                String json = HttpUtil.get(Comm.GRAPH_GATE + Comm.GRAPH_USER_GET_USER_INFO + "?access_token=" + req.getAccess_token()
+                String json = HttpUtil.get(Comm.GRAPH_GATE + Comm.GRAPH_USER_GET_USER_INFO_ACTION + "?access_token=" + req.getAccess_token()
                         + "&oauth_consumer_key=" + req.getOauth_consumer_key()
                         + "&openid=" + req.getOpenid());
                 if (json.indexOf("nickname") >= 0) {
