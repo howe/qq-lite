@@ -48,7 +48,7 @@
 
     <issueManagement>
         <system>Github Issue</system>
-        <url>https://github.com/howe/weixin-lite/issues</url>
+        <url>https://github.com/howe/qq-lite/issues</url>
     </issueManagement>
     <licenses>
         <license>
@@ -66,9 +66,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/howe/weixin-lite.git</connection>
-        <developerConnection>scm:git:git://github.com/howe/weixin-lite.git</developerConnection>
-        <url>git://github.com/howe/weixin-lite.git</url>
+        <connection>scm:git:git://github.com/howe/qq-lite.git</connection>
+        <developerConnection>scm:git:git://github.com/howe/qq-lite.git</developerConnection>
+        <url>git://github.com/howe/qq-lite.git</url>
     </scm>
 
     <distributionManagement>
