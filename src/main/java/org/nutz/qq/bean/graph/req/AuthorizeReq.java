@@ -81,7 +81,7 @@ public class AuthorizeReq {
      * 用于展示的样式。不传则默认展示为PC下的样式。
      * 如果传入“mobile”，则展示为mobile端下的样式。
      */
-    private String display = "mobile";
+    private String display;
 
     public String getDisplay() {
         return display;

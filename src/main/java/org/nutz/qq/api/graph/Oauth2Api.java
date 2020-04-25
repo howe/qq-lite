@@ -42,8 +42,8 @@ public class Oauth2Api {
                         + "&client_id=" + req.getClient_id()
                         + "&redirect_uri=" + req.getRedirect_uri()
                         + "&state=" + req.getState()
-                        + "&scope=" + req.getScope();
-//                        + "&display=" + req.getDisplay();
+                        + "&scope=" + req.getScope()
+                        + "&display=" + req.getDisplay();
             }
         } catch (Exception e) {
             e.printStackTrace();
